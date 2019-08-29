@@ -1,0 +1,273 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  /*font-family: 'Bowlby One SC', cursive;*/
+}
+
+body{
+  background: #81B2CA;
+}
+
+#container{
+  display: flex;
+  position: relative;
+}
+
+#container nav{
+  font-family: 'Bowlby One SC', cursive;
+  position: fixed;
+  width: 25%;
+  height: 100%;
+  background: #2D576C;
+  padding: 2% 0;
+}
+#container nav .menu-bar img{
+  padding-left: 3%;
+  padding-bottom: 3%;
+  width: 98%;
+}
+
+#container nav .redes{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+#container nav .redes .fb{
+  color: #253597;
+}
+
+#container .contenido-pag{
+  font-family: 'Bowlby One SC', cursive;
+  width: 100%;
+  margin-left: 25%;
+}
+#container .contenido-pag .news .item-new{
+  background-color: #2D576C;
+  border: 1px solid #ddd;
+  margin: 4.5%;
+  padding: 1%;
+  height: 150px;
+}
+
+#container .contenido-pag .news .item-new .imagen-item{
+  float: left;
+  display: block;
+  background-size: cover;
+  left: 25%;
+  width: 30%;
+  height: 130px;
+}
+#container .contenido-pag .news .item-new .text-new{
+  margin-left: 4%;
+  float: left;
+  width: 65%;
+  height: 130px;
+  font-family: 'Arial';
+}
+#container .contenido-pag .sec-noticias{
+  margin-left: 3%;
+}
+#container .contenido-pag header{
+  font-family: 'Bowlby One SC', cursive;
+  padding: 10px;
+  font-size: 24px;
+  text-align: center;
+}
+#container .contenido-pag header img{
+  width: 30%;
+  margin-bottom: 5%;
+}
+#container .contenido-pag section{
+  background-image: url('img/arma2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 75%;
+  margin-top: 0%;
+  margin-left: 12%;
+  height: 480px;
+  border: 2px solid;
+}
+#container .contenido-pag .fondo{
+  font-family: 'Bowlby One SC', cursive;
+  text-align: center;
+  height: 30%;
+  min-height: 20%;
+  background-image: linear-gradient(
+      rgba(45, 87, 108, 0.3),
+      rgba(45, 87, 108, 0.3)
+    ),
+ url('img/fondo1.jpg');
+ background-repeat: no-repeat;
+  margin-bottom: 20%;
+  margin-bottom: 3%;
+}
+
+#container .contenido-pag .fondo .letra-centro{
+  color: #FFF;
+  position:relative;
+  padding-top: 25%;
+  font-size: 3em;
+  text-transform: capitalize;
+}
+#container .contenido-pag .fondo .letra-pie{
+  color: #fff;
+}
+#container .contenido-pag .info-importante{
+  margin-top: 5%;
+  margin-bottom: 2%;
+  text-align: justify;
+  margin-left: 2%;
+  margin-right: 2%;
+  font-family: 'Telex', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#container .contenido-pag .info-importante div{
+  margin-top: 1.5%;
+}
+
+#container .contenido-pag footer{
+  text-align: justify;
+  font-family: 'Telex', sans-serif;
+  width: 100%;
+  height: auto;
+  margin-left: 0px;
+  border: 2px solid;
+  bottom: 0;
+  margin-top: 1%;
+  padding: 1%;
+}
+
+#container .contenido-pag footer div{
+  margin-top: 0.5%;
+}
+
+#container nav .redes .tw{
+  color: #588CCA;
+}
+
+#container nav .redes .ig{
+  color: #E61545;
+}
+
+#container nav .redes a{
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin: 0 4px;
+  border-top-right-radius: 1em 5px;
+  border-top-left-radius: 1em 5px;
+}
+
+#container nav .redes a i{
+  font-size: 20px;
+}
+
+#container nav ul li{
+  padding: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid rgba(225, 225, 225, 0.05);
+}
+
+#container nav ul li a{
+  color: #5BA3C5;
+  display: block;
+}
+
+#container nav ul li a .fas{
+  width: 20px;
+}
+
+#container nav ul li:hover{
+  background: #A4D3ED;
+}
+
+#container nav ul li:hover a{
+  color: #fff;
+}
+
+@media screen and (max-width:860px){
+  #container nav{
+
+  }
+}
+
+#container .contenido-pag .info-importante .imagen1 {
+  width: 70%;
+}
+
+#container .contenido-pag .info-importante .imagen1 img{
+  margin-left:  22.5%;
+  width: 100%;
+}
+
+/* Prueba Carrusel rancio */
+
+#container .contenido-pag .slider{
+  width: 50%;
+  overflow: hidden;
+  margin: auto;
+}
+
+#container .contenido-pag .slider ul{
+  padding: 0;
+  display: flex;
+  width: 300%;
+  animation: cambio 15s infinite alternate;
+}
+
+#container .contenido-pag  .minijuego{
+  border: solid;
+  width: 60%;
+  height: 15%;
+  border: 5%;
+  margin-top: 5%;
+  margin-left: 20%;
+  margin-bottom: 20%;
+}
+
+
+#container .contenido-pag .slider ul li{
+  width: 100%;
+  background-size: cover;
+}
+
+#container .contenido-pag .slider ul li img{
+  width: 100%;
+  height: 100%;
+}
+
+hr {
+  background-color:  #2D576C;
+  height: 7px;
+  width: 90%;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+@keyframes cambio {
+  0%{margin-left: 0;}
+  30%{margin-left: 0;}
+
+  35%{margin-left: -100%;}
+  65%{margin-left: -100%;}
+
+  70%{margin-left: -200%;}
+  100%{margin-left: -200%;}
+}
+
+/* Fin Prueba Carrusel rancio*/
