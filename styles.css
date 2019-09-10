@@ -67,8 +67,10 @@ body{
   margin-left: 4%;
   float: left;
   width: 65%;
-  height: 130px;
   font-family: 'Arial';
+}
+#container .contenido-pag .news .item-new .text-new p{
+  padding-top: 4%;
 }
 #container .contenido-pag .sec-noticias{
   margin-left: 3%;
@@ -97,24 +99,20 @@ body{
 #container .contenido-pag .fondo{
   font-family: 'Bowlby One SC', cursive;
   text-align: center;
-  height: 30%;
-  min-height: 20%;
+  padding-top: 25%;
+  height: 100vh;
   background-image: linear-gradient(
       rgba(45, 87, 108, 0.3),
       rgba(45, 87, 108, 0.3)
     ),
  url('img/fondo1.jpg');
  background-repeat: no-repeat;
-  margin-bottom: 20%;
-  margin-bottom: 3%;
 }
 
-#container .contenido-pag .fondo .letra-centro{
-  color: #FFF;
-  position:relative;
-  padding-top: 25%;
-  font-size: 3em;
-  text-transform: capitalize;
+#container .contenido-pag .fondo img{
+  height: 30%;
+  width: 22%;
+  margin-bottom: 5%;
 }
 #container .contenido-pag .fondo .letra-pie{
   color: #fff;
@@ -135,19 +133,12 @@ body{
 }
 
 #container .contenido-pag footer{
-  text-align: justify;
+  padding: 1%;
+  text-align: center;
   font-family: 'Telex', sans-serif;
   width: 100%;
-  height: auto;
-  margin-left: 0px;
-  border: 2px solid;
   bottom: 0;
-  margin-top: 1%;
-  padding: 1%;
-}
-
-#container .contenido-pag footer div{
-  margin-top: 0.5%;
+  background-color: #086375;
 }
 
 #container nav .redes .tw{
@@ -178,7 +169,9 @@ body{
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   border-top: 1px solid rgba(225, 225, 225, 0.05);
 }
-
+#container nav ul .active{
+background: #A4D3ED;
+}
 #container nav ul li a{
   color: #5BA3C5;
   display: block;
@@ -214,8 +207,9 @@ body{
 /* Prueba Carrusel rancio */
 
 #container .contenido-pag .slider{
-  width: 50%;
-  overflow: hidden;
+  padding-top: 9%;
+  width: 80%;
+  height: 100vh;
   margin: auto;
 }
 
@@ -230,7 +224,6 @@ body{
   border: solid;
   width: 60%;
   height: 15%;
-  border: 5%;
   margin-top: 5%;
   margin-left: 20%;
   margin-bottom: 20%;
@@ -270,4 +263,97 @@ hr {
   100%{margin-left: -200%;}
 }
 
-/* Fin Prueba Carrusel rancio*/
+
+/* COPIA LIAM*/
+.carousel-container {
+  max-width: 100%;
+  position: relative;
+
+}
+.carousel-container .mySlides img{
+  max-height: 500px;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  background-color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: purple;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*w3 modal*/
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
