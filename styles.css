@@ -21,7 +21,10 @@ body{
   position: fixed;
   width: 25%;
   height: 100%;
-  background: #2D576C;
+  background: linear-gradient(
+    rgba(34, 33, 33, 1),
+    rgba(110, 1, 99, 0.8)
+    );
   padding: 2% 0;
 }
 #container nav .menu-bar img{
@@ -99,7 +102,7 @@ body{
 #container .contenido-pag .fondo{
   font-family: 'Bowlby One SC', cursive;
   text-align: center;
-  padding-top: 25%;
+  padding-top: 15%;
   height: 100vh;
   background-image: linear-gradient(
       rgba(45, 87, 108, 0.3),
@@ -112,10 +115,14 @@ body{
 #container .contenido-pag .fondo img{
   height: 30%;
   width: 22%;
-  margin-bottom: 5%;
 }
 #container .contenido-pag .fondo .letra-pie{
   color: #fff;
+  padding: 3%;
+  margin: 0% 4% 10% 4%;
+  width: 90%;
+  background-color: rgba(103, 35, 120, 0.2);
+  border-radius: 10px;
 }
 #container .contenido-pag .info-importante{
   margin-top: 5%;
@@ -138,7 +145,10 @@ body{
   font-family: 'Telex', sans-serif;
   width: 100%;
   bottom: 0;
-  background-color: #086375;
+  background: rgba(0, 0, 0, 0.4);
+}
+#container .contenido-pag footer .footer-content{
+  color: #ffffff;
 }
 
 #container nav .redes .tw{
@@ -170,10 +180,12 @@ body{
   border-top: 1px solid rgba(225, 225, 225, 0.05);
 }
 #container nav ul .active{
-background: #A4D3ED;
+background: linear-gradient(
+  rgb(162,39,135),
+  rgba(162, 39, 135, 0.59));
 }
 #container nav ul li a{
-  color: #5BA3C5;
+  color: #dddddd;
   display: block;
 }
 
@@ -182,11 +194,13 @@ background: #A4D3ED;
 }
 
 #container nav ul li:hover{
-  background: #A4D3ED;
+  Background: linear-gradient(
+    rgb(162,39,135),
+    rgba(162, 39, 135, 0.59));
 }
 
 #container nav ul li:hover a{
-  color: #fff;
+  color: #c2bebe;
 }
 
 @media screen and (max-width:860px){
