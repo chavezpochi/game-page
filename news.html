@@ -3,18 +3,25 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles.css">
-    <!-- Existe para hacer import en css, pero no me funcionaba por eso lo puse aca xD-->
+    <!-- Links a fuentes de google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Telex&display=swap" rel="stylesheet">
-    <title>The best games with their statistics, news, technology and more</title>
+    <title>Noticias sobre juegos</title>
+    <!-- Link a los iconos de fontawesome -->
     <script src="https://kit.fontawesome.com/d7531087f8.js"></script>
   </head>
+
+  <!-- Body de la pagina -->
   <body>
+    <!-- Contenedor de toda la pagina -->
     <div id="container">
+      <!-- Menu de la pagina -->
       <nav>
+        <!-- Div contenedor de la imagen del menu -->
         <div class="menu-bar">
           <img src="img/menu.png" alt="Logo menu">
         </div>
+        <!-- Lista sin orden que contiene las opciones del menu -->
         <ul>
           <li><a href="index.html"><i class="fas fa-dice-one"></i>Inicio</a></li>
           <li class="active"><a href="news.html"><i class="fas fa-dice-two"></i>Noticias</a></li>
@@ -22,58 +29,71 @@
           <li><a href="#a"><i class="fas fa-dice-four"></i>EASport</a></li>
           <li><a href="#2"><i class="fas fa-dice-five"></i>Tecnologia</a></li>
         </ul>
+        <!-- Fin lista sin orden -->
 
+        <!-- Div contenedor de las redes sociales -->
         <div class="redes">
           <a href="https://www.facebook.com/FAI-Facultad-de-Informática-UNCo-185003921537235/?fref=ts" target="_blank" class="fb"><i class="fab fa-facebook "></i></a>
           <a href="https://twitter.com/faiuncoma" target="_blank" class="tw"><i class="fab fa-twitter "></i></a>
           <a href="#ig" target="_blank" class="ig"><i class="fab fa-instagram "></i></a>
         </div>
-
-
+        <!-- Fin div contenedor de las redes sociales -->
       </nav>
+      <!-- Fin menu de la pagina -->
 
+      <!-- Informacion de la pagina (noticias y pie de pagina)-->
       <div class="contenido-pag">
+        <!-- Encabezado para la seccion de noticias -->
+        <h1 class="sec-noticias" id="sec-noticias">Noticias</h1>
 
-          <h1 class="sec-noticias" id="sec-noticias">Noticias</h1>
-          <div class="news">
-            <div class="item-new">
-              <img class="imagen-item" src="img/fifa.jpg" alt="Logo noticia 1">
-              <div class="text-new">
-                <a target="_blank" href="https://www.ea.com/es-es/games/fifa/fifa-20">FIFA 2020</a>
-                <p>Para PC te muestra las dos caras del deporte rey: la prestigiosa competición profesional y el fútbol callejero más auténtico en la nueva experiencia EA SPORTS VOLTA.
-                </p>
-              </div>
-
-            </div>
-            <div class="item-new">
-              <img class="imagen-item" src="img/ancestors.jpg" alt="Logo noticia 2">
-              <div class="text-new">
-                <a target="_blank" href="https://ancestorsgame.com/en/">The Humankind Odyssey</a>
-                <p>Embárcate en la increíble odisea de la evolución humana y comienza tu viaje 10 millones de años atrás en una nueva aventura.
-                </p>
-              </div>
-            </div>
-            <div class="item-new">
-              <img class="imagen-item" src="img/cyberpunk.png" alt="Logo noticia 3">
-              <div class="text-new">
-                <a target="_blank" href="https://www.cyberpunk.net/us/es/pre-order">Cyberpunk 2077</a>
-                <p>Es una historia de acción y aventura en mundo abierto ambientada en Night City, una megalópolis obsesionada con el poder, el glamur y la modificación corporal.
-                </p>
-              </div>
-            </div>
+        <!-- Noticia 1 -->
+        <div class="news">
+          <img class="imagen-item" src="img/fifa.jpg" alt="Logo noticia 1">
+          <!-- Informacion de la noticia -->
+          <div class="text-new">
+            <a target="_blank" href="https://www.ea.com/es-es/games/fifa/fifa-20">FIFA 2020</a>
+            <p>Para PC te muestra las dos caras del deporte rey: la prestigiosa competición profesional y el fútbol callejero más auténtico en la nueva experiencia EA SPORTS VOLTA.</p>
           </div>
+        </div>
+        <!-- Fin noticia 1 -->
 
-          <footer>
-            <!--INFO -->
-            <div class="">
-              <p>© 2019 FAI-GAME. Todos los derechos reservados.</p>
-              <p>Autores: Matias Oyarzun & Rodrigo Chavez</p>
-              <p>Todas las marcas registradas pertenecen a sus respectivos dueños.</p>
-              <p>Los minijuegos son propiedad de: <a href="https://kiz10.com/">kiz10.com</a></p>
-            </div>
-          </footer>
+        <!-- Noticia 2 -->
+        <div class="news">
+          <img class="imagen-item" src="img/ancestors.jpg" alt="Logo noticia 2">
+          <!-- Informacion de la noticia -->
+          <div class="text-new">
+            <a target="_blank" href="https://ancestorsgame.com/en/">The Humankind Odyssey</a>
+            <p>Embárcate en la increíble odisea de la evolución humana y comienza tu viaje 10 millones de años atrás en una nueva aventura.</p>
+          </div>
+        </div>
+        <!-- Fin noticia 2 -->
 
+        <!-- Noticia 3 -->
+        <div class="news">
+          <img class="imagen-item" src="img/cyberpunk.png" alt="Logo noticia 3">
+          <!-- Informacion de la noticia -->
+          <div class="text-new">
+            <a target="_blank" href="https://www.cyberpunk.net/us/es/pre-order">Cyberpunk 2077</a>
+            <p>Es una historia de acción y aventura en mundo abierto ambientada en Night City, una megalópolis obsesionada con el poder, el glamur y la modificación corporal.</p>
+          </div>
+        </div>
+        <!-- Fin noticia 3 -->
+
+        <!-- Pie de pagina, contiene informacion de los creadores y derechos a otras paginas -->
+        <footer>
+          <!-- Informacion del pie de pagina -->
+          <div class="footer-content">
+            <p>© 2019 FAI-GAME. Todos los derechos reservados.</p>
+            <p>Autores: Matias Oyarzun & Rodrigo Chavez</p>
+            <p>Todas las marcas registradas pertenecen a sus respectivos dueños.</p>
+            <p>Los minijuegos son propiedad de: <a href="https://kiz10.com/">kiz10.com</a></p>
+          </div>
+        </footer>
+        <!-- Fin pie de pagina -->
       </div>
+      <!-- Fin informacion de la pagina -->
     </div>
+    <!-- Fin contenedor de toda la pagina -->
   </body>
+  <!-- Fin body de la pagina -->
 </html>

@@ -1,21 +1,27 @@
+/* Propiedades que son aplicadas a toda la pagina */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  /*font-family: 'Bowlby One SC', cursive;*/
 }
 
+/* Propiedades definidas sobre el body de la pagina */
 body{
-  background: #81B2CA;
+  background: linear-gradient(
+    rgba(130, 51, 122, 0.8),
+    rgba(91, 38, 85, 1)
+    );
 }
 
+/* Propiedades definidas sobre el contenedor de toda la pagina */
 #container{
   display: flex;
   position: relative;
 }
 
+/* Propiedades definidas sobre el menu que se encuentra dentro del contenedor de la pagina */
 #container nav{
   font-family: 'Bowlby One SC', cursive;
   position: fixed;
@@ -27,12 +33,15 @@ body{
     );
   padding: 2% 0;
 }
+
+/* Propiedades definidas sobre la imagen del menu */
 #container nav .menu-bar img{
   padding-left: 3%;
   padding-bottom: 3%;
   width: 98%;
 }
 
+/* Propiedades definidas sobre las redes sociales que se encuentran en el menu */
 #container nav .redes{
   position: absolute;
   bottom: 0;
@@ -41,24 +50,35 @@ body{
   display: flex;
 }
 
+/* Color icono facebook */
 #container nav .redes .fb{
   color: #253597;
 }
 
+/* Propiedades definidas sobre el div que contiene la informacion relevante de la pagina */
 #container .contenido-pag{
   font-family: 'Bowlby One SC', cursive;
   width: 100%;
   margin-left: 25%;
 }
-#container .contenido-pag .news .item-new{
-  background-color: #2D576C;
-  border: 1px solid #ddd;
+
+#container .contenido-pag .sec-noticias{
+  margin-left: 3%;
+  color: white;
+}
+
+/* Propiedades definidas sobre cada noticia de la pagina  */
+#container .contenido-pag .news {
+  background-color: rgb(88, 68, 144);
+  border: 3px solid #ddd;
+  border-radius: 10px;
   margin: 4.5%;
   padding: 1%;
   height: 150px;
 }
 
-#container .contenido-pag .news .item-new .imagen-item{
+/* Propiedades definidas sobre la imagen de las noticias */
+#container .contenido-pag .news .imagen-item{
   float: left;
   display: block;
   background-size: cover;
@@ -66,39 +86,21 @@ body{
   width: 30%;
   height: 130px;
 }
-#container .contenido-pag .news .item-new .text-new{
+
+/* Propiedades definidas sobre el texto de la noticia */
+#container .contenido-pag .news .text-new{
   margin-left: 4%;
   float: left;
   width: 65%;
   font-family: 'Arial';
 }
-#container .contenido-pag .news .item-new .text-new p{
+
+/* Propiedades definidas sobre la informacion de la noticia */
+#container .contenido-pag .news .text-new p{
   padding-top: 4%;
 }
-#container .contenido-pag .sec-noticias{
-  margin-left: 3%;
-}
-#container .contenido-pag header{
-  font-family: 'Bowlby One SC', cursive;
-  padding: 10px;
-  font-size: 24px;
-  text-align: center;
-}
-#container .contenido-pag header img{
-  width: 30%;
-  margin-bottom: 5%;
-}
-#container .contenido-pag section{
-  background-image: url('img/arma2.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 75%;
-  margin-top: 0%;
-  margin-left: 12%;
-  height: 480px;
-  border: 2px solid;
-}
+
+/* Propiedades definidas sobre el fondo de la pagina */
 #container .contenido-pag .fondo{
   font-family: 'Bowlby One SC', cursive;
   text-align: center;
@@ -112,10 +114,13 @@ body{
  background-repeat: no-repeat;
 }
 
+/* Propiedades definidas sobre la imagen del fondo de la pagina */
 #container .contenido-pag .fondo img{
   height: 30%;
   width: 22%;
 }
+
+/* Propiedades definidas sobre el texto del fondo de la pagina */
 #container .contenido-pag .fondo .letra-pie{
   color: #fff;
   padding: 3%;
@@ -124,21 +129,8 @@ body{
   background-color: rgba(103, 35, 120, 0.2);
   border-radius: 10px;
 }
-#container .contenido-pag .info-importante{
-  margin-top: 5%;
-  margin-bottom: 2%;
-  text-align: justify;
-  margin-left: 2%;
-  margin-right: 2%;
-  font-family: 'Telex', sans-serif;
-  font-weight: bold;
-  font-size: 18px;
-}
 
-#container .contenido-pag .info-importante div{
-  margin-top: 1.5%;
-}
-
+/* Propiedades definidas sobre el pie de pagina */
 #container .contenido-pag footer{
   padding: 1%;
   text-align: center;
@@ -147,8 +139,14 @@ body{
   bottom: 0;
   background: rgba(0, 0, 0, 0.4);
 }
+
+/* Propiedades definidas sobre el contenido del footer */
 #container .contenido-pag footer .footer-content{
   color: #ffffff;
+}
+
+#container a{
+  color: rgb(255, 4, 185);
 }
 
 #container nav .redes .tw{
@@ -254,6 +252,10 @@ background: linear-gradient(
   height: 100%;
 }
 
+.game1{
+  position: inherit;
+  width: 90%;
+}
 hr {
   background-color:  #2D576C;
   height: 7px;
