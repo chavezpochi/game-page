@@ -60,8 +60,10 @@ body{
   font-family: 'Bowlby One SC', cursive;
   width: 100%;
   margin-left: 25%;
+  height: 100vh;
 }
 
+/* Propiedades definidas sobre los encabezados de las paginas */
 #container .contenido-pag .sec-noticias{
   margin-left: 3%;
   color: white;
@@ -72,9 +74,9 @@ body{
   background-color: rgb(88, 68, 144);
   border: 3px solid #ddd;
   border-radius: 10px;
-  margin: 4.5%;
+  margin: 4.5% 5% 4.5% 5%;
   padding: 1%;
-  height: 150px;
+  height: 18%;
 }
 
 /* Propiedades definidas sobre la imagen de las noticias */
@@ -84,15 +86,19 @@ body{
   background-size: cover;
   left: 25%;
   width: 30%;
-  height: 130px;
+  height: 100%;
 }
 
 /* Propiedades definidas sobre el texto de la noticia */
 #container .contenido-pag .news .text-new{
-  margin-left: 4%;
+  margin-left: 3%;
   float: left;
   width: 65%;
   font-family: 'Arial';
+}
+
+/* Propiedades definidas sobre el ancla del titulo de la noticia (NO PUDE CENTRAR EL TITULO DE LA NOTICIA :'V)*/
+#container .contenido-pag .news .text-new a{
 }
 
 /* Propiedades definidas sobre la informacion de la noticia */
@@ -145,18 +151,22 @@ body{
   color: #ffffff;
 }
 
+/*
 #container a{
   color: rgb(255, 4, 185);
-}
+}*/
 
+/* Propiedades icono twitter */
 #container nav .redes .tw{
   color: #588CCA;
 }
 
+/* Propiedades icono instagram */
 #container nav .redes .ig{
   color: #E61545;
 }
 
+/* Propiedades sobre el ancla de los iconos de las redes sociales */
 #container nav .redes a{
   display: block;
   width: 40px;
@@ -168,36 +178,45 @@ body{
   border-top-left-radius: 1em 5px;
 }
 
+/* Propiedades de cada icono de las redes */
 #container nav .redes a i{
   font-size: 20px;
 }
 
+/* Propiedades sobre cada opcion del menu */
 #container nav ul li{
   padding: 15px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   border-top: 1px solid rgba(225, 225, 225, 0.05);
 }
+
+/* Propiedades sobre la opcion seleccionada (Ej: Si nos encontramos en noticias, estara marcado de un color distinto al resto de las opciones del menu) */
 #container nav ul .active{
 background: linear-gradient(
   rgb(162,39,135),
   rgba(162, 39, 135, 0.59));
 }
+
+/* Propiedades sobre cada ancla de las opciones del menu */
 #container nav ul li a{
   color: #dddddd;
   display: block;
 }
 
+/* Propiedades definidas sobre cada icono del menu */
 #container nav ul li a .fas{
   width: 20px;
 }
 
+/* Propiedades de cada opcion del menu (cuando se pasa mouse por encima) */
 #container nav ul li:hover{
   Background: linear-gradient(
     rgb(162,39,135),
     rgba(162, 39, 135, 0.59));
 }
 
-#container nav ul li:hover a{
+/* Propiedades sobre cada ancla cuando se pasa el mouse sobre la opcion del menu */
+#container nav ul li a:hover{
   color: #c2bebe;
 }
 
@@ -205,15 +224,6 @@ background: linear-gradient(
   #container nav{
 
   }
-}
-
-#container .contenido-pag .info-importante .imagen1 {
-  width: 70%;
-}
-
-#container .contenido-pag .info-importante .imagen1 img{
-  margin-left:  22.5%;
-  width: 100%;
 }
 
 /* Prueba Carrusel rancio */
@@ -256,6 +266,7 @@ background: linear-gradient(
   position: inherit;
   width: 90%;
 }
+
 hr {
   background-color:  #2D576C;
   height: 7px;
@@ -367,8 +378,7 @@ hr {
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.close:hover, .close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
