@@ -69,6 +69,7 @@ body{
 /*Contenido central de la pagina*/
 #container .contenido-pag .imp-content{
   width: 100%;
+  padding-top: 3%;
   height: 100vh!important;
 }
 
@@ -160,19 +161,13 @@ body{
   color: #ffffff;
 }
 
-/*
 #container a{
   color: rgb(255, 4, 185);
-}*/
+}
 
 /* Propiedades icono twitter */
 #container nav .redes .tw{
   color: #588CCA;
-}
-
-/* Propiedades icono instagram */
-#container nav .redes .ig{
-  color: #E61545;
 }
 
 /* Propiedades sobre el ancla de los iconos de las redes sociales */
@@ -307,32 +302,6 @@ background: linear-gradient(
   border-radius: 10px;
   text-align: center;
 }
-
-hr {
-  background-color:  #2D576C;
-  height: 7px;
-  width: 90%;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  border-width: 1px;
-}
-
-@keyframes cambio {
-  0%{margin-left: 0;}
-  30%{margin-left: 0;}
-
-  35%{margin-left: -100%;}
-  65%{margin-left: -100%;}
-
-  70%{margin-left: -200%;}
-  100%{margin-left: -200%;}
-}
-
-
-/* COPIA LIAM*/
 .carousel-container {
   max-width: 100%;
   height: 100%;
