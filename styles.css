@@ -121,12 +121,12 @@ body{
 }
 
 /* Propiedades definidas sobre el texto del fondo de la pagina */
-#container .contenido-pag .fondo .letra-pie{
+.letra-pie{
   color: #fff;
   padding: 3%;
   margin: 0% 4% 10% 4%;
   width: 90%;
-  background-color: rgba(103, 35, 120, 0.2);
+  background-color: rgba(103, 35, 120, 0.4);
   border-radius: 10px;
 }
 
@@ -251,11 +251,41 @@ background: linear-gradient(
   width: 100%;
   height: 100%;
 }
-
-.game1{
-  position: inherit;
-  width: 90%;
+/*Imagen juego 1*/
+.game{
+  position: absolute;
+  z-index:1;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  opacity: 0.7;
+  border-color:  rgb(255, 255, 255)!important;
+  border: solid;
+  border-radius: 10px;
+  }
+#myBtn{
+  margin: auto;
+  z-index:2;
+  padding: 0.75em 1.5em;
+  border-radius: 5px;
+  color: white;
+  background: #b81471;
+  cursor: pointer;
+  text-align: center;
 }
+
+.game-text{
+  margin: 32% 10% 10% 10%!important;
+  position: absolute;
+  z-index:2;
+  color: #fff;
+  padding: 3%;
+  width: 80%;
+  background-color: rgba(103, 35, 120, 0.8);
+  border-radius: 10px;
+  text-align: center;
+}
+
 hr {
   background-color:  #2D576C;
   height: 7px;
@@ -283,14 +313,14 @@ hr {
 /* COPIA LIAM*/
 .carousel-container {
   max-width: 100%;
+  height: 80%;
   position: relative;
+  justify-content: center;
 
-}
-.carousel-container .mySlides img{
-  max-height: 500px;
 }
 /* Next & previous buttons */
 .prev, .next {
+  z-index: 2;
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -338,9 +368,9 @@ hr {
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  position: absolute; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  padding-top: 5%; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
