@@ -400,6 +400,8 @@ hr {
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  text-align: center!important;
+  justify-content: center!important;
 }
 
 /* Modal Content */
@@ -408,9 +410,14 @@ hr {
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 60%;
+  height: 60%;
+  text-align: center!important;
 }
-
+iframe{
+  height:100%!important;
+  width: 90%!important;
+}
 /* The Close Button */
 .close {
   color: #aaaaaa;
