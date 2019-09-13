@@ -2,19 +2,27 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <!-- Link a los estilos de css -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Existe para hacer import en css, pero no me funcionaba por eso lo puse aca xD-->
+    <!-- Links a fuentes de google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Telex&display=swap" rel="stylesheet">
-    <title>The best games with their statistics, news, technology and more</title>
+    <title>FAI Games - Minijuegos</title>
+    <!-- Link a los iconos de fontawesome -->
     <script src="https://kit.fontawesome.com/d7531087f8.js"></script>
   </head>
+
+  <!-- Body de la pagina -->
   <body>
+    <!-- Contenedor de toda la pagina -->
     <div id="container">
+      <!-- Menu de la pagina -->
       <nav>
+        <!-- Div contenedor de la imagen del menu -->
         <div class="menu-bar">
           <img src="img/menu.png" alt="Logo menu">
         </div>
+        <!-- Lista sin orden que contiene las opciones del menu -->
         <ul>
           <li><a href="index.html"><i class="fas fa-dice-one"></i>Inicio</a></li>
           <li><a href="news.html"><i class="fas fa-dice-two"></i>Noticias</a></li>
@@ -22,77 +30,97 @@
           <li><a href="#a"><i class="fas fa-dice-four"></i>EASport</a></li>
           <li><a href="#2"><i class="fas fa-dice-five"></i>Tecnologia</a></li>
         </ul>
+        <!-- Fin lista sin orden -->
 
+        <!-- Div contenedor de las redes sociales -->
         <div class="redes">
           <a href="https://www.facebook.com/FAI-Facultad-de-Informática-UNCo-185003921537235/?fref=ts" target="_blank" class="fb"><i class="fab fa-facebook "></i></a>
           <a href="https://twitter.com/faiuncoma" target="_blank" class="tw"><i class="fab fa-twitter "></i></a>
           <a href="#ig" target="_blank" class="ig"><i class="fab fa-instagram "></i></a>
         </div>
-
-
+        <!-- Fin div contenedor de las redes sociales -->
       </nav>
+      <!-- Fin menu de la pagina -->
 
+      <!-- Informacion de la pagina (noticias y pie de pagina) -->
       <div class="contenido-pag">
-
-          <h1 class="sec-noticias" id="sec-miniJuegos">Minijuegos</h1>
-          <!-- Prueba carrusel rancio -->
-          <div class="slider">
-            <div class="carousel-container">
-                    <a name="carousel"></a>
-                  <div class="mySlides fade">
-                    <img class="game1" src="img/gauchos.jpg" alt="Foto de Audiencia de Esports">
-                    <button id="myBtn">Open Modal</button>
-                  </div>
-
-                  <div class="mySlides fade">
-                    <img src="img/fondo.jpg" style="width:100%" alt="Foto de copa de Esports">
-
-                  </div>
-
-                  <div class="mySlides fade">
-                    <img src="img/fondo1.jpg" style="width:100%" alt= "Foto del publico de un torneo de Esports">
-
-                  </div>
-                  <div class="mySlides fade">
-
-
-                  </div>
-                  <!-- Next and previous buttons -->
-                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                  </div>
-          </div>
-          <!-- Fin Prueba Carrusel rancio -->
-          <!-- Trigger/Open The Modal -->
-          <button id="myBtn">Open Modal</button>
-
-          <!-- The Modal -->
-          <div id="myModal" class="modal">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-              <span class="close">&times;</span>
-              <!--<iframe style="height:500px; width: 800px;" mozallowfullscreen="true" allow="autoplay; fullscreen; geolocation; microphone; camera; midi" frameborder="0" src="//v6p9d9t4.ssl.hwcdn.net/html/1569072/Sunset Gauchers/index.html" msallowfullscreen="true" scrolling="no" allowfullscreen="true" webkitallowfullscreen="true" id="game_drop" allowtransparency="true"></iframe>
-              <iframe style="height:500px; width: 800px;" mozallowfullscreen="true" allow="autoplay; fullscreen; geolocation; microphone; camera; midi" frameborder="0" src="//v6p9d9t4.ssl.hwcdn.net/html/710674/gordomortero/index.html" msallowfullscreen="true" scrolling="no" allowfullscreen="true" webkitallowfullscreen="true" id="game_drop" allowtransparency="true"></iframe>-->
-              <iframe style="height:500px; width: 800px;" mozallowfullscreen="true" allow="autoplay; fullscreen; geolocation; microphone; camera; midi" frameborder="0" src="//v6p9d9t4.ssl.hwcdn.net/html/967327/Pity/index.html" msallowfullscreen="true" scrolling="no" allowfullscreen="true" webkitallowfullscreen="true" id="game_drop" allowtransparency="true"></iframe>
+        <!-- Encabezado seccion minijuegos -->
+        <h1 class="sec-noticias" id="sec-miniJuegos">Minijuegos</h1>
+        <!-- Carrusel de imagenes de minijuegos -->
+        <div class="slider">
+          <!-- Contenedor de cada imagen del carrusel -->
+          <div class="carousel-container">
+            <!-- Ancla para salto de contenido (pagina examinator) -->
+            <a name="carousel"></a>
+            <!-- Primer slide del carrusel -->
+            <div class="mySlides fade">
+              <!-- Imagen y boton del minijuego para jugar -->
+              <img class="game1" src="img/gauchos.jpg" alt="Foto del primer minijuego">
+              <button id="myBtn">Jugar</button>
             </div>
+            <!-- Fin primer slide del carrusel -->
 
-          </div>
-          <footer>
-            <!--INFO -->
-            <div class="">
-              <p>© 2019 FAI-GAME. Todos los derechos reservados.</p>
-              <p>Autores: Matias Oyarzun & Rodrigo Chavez</p>
-              <p>Todas las marcas registradas pertenecen a sus respectivos dueños.</p>
-              <p>Los minijuegos son propiedad de: <a href="https://kiz10.com/">kiz10.com</a></p>
+            <!-- Segundo slide del carrusel -->
+            <div class="mySlides fade">
+              <!-- Imagen y boton del minijuego para jugar -->
+              <img src="img/fondo.jpg" alt="Foto del segundo minijuego">
+              <button id="myBtn">Jugar</button>
             </div>
-          </footer>
+            <!-- Fin segundo slide del carrusel -->
 
+            <!-- Tercer slide del carrusel -->
+            <div class="mySlides fade">
+              <!-- Imagen y boton del minijuego para jugar -->
+              <img src="img/fondo1.jpg" alt= "Foto del tercer minijuego">
+              <button id="myBtn">Jugar</button>
+            </div>
+            <!-- Fin tercer slide del carrusel -->
+
+            <!-- Cuarto slide del carrusel -->
+            <div class="mySlides fade">
+              <img src="img/fai.png" alt="Foto del cuarto minijuego">
+              <button id="myBtn">Jugar</button>
+            </div>
+            <!-- Fin cuato slide del carrusel -->
+
+            <!-- Boton anterior y siguiente del carrusel -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <!-- Fin boton anterior y siguiente del carrusel -->
+          </div>
+          <!-- Fin contenedor de cada imagen del carrusel -->
+        </div>
+        <!-- Fin carrusel de imagenes de minijuegos -->
+
+        <!-- Modal para minijuegos -->
+        <div id="myModal" class="modal">
+          <!-- Contenido del modal -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <!--<iframe style="height:500px; width: 800px;" mozallowfullscreen="true" allow="autoplay; fullscreen; geolocation; microphone; camera; midi" frameborder="0" src="//v6p9d9t4.ssl.hwcdn.net/html/1569072/Sunset Gauchers/index.html" msallowfullscreen="true" scrolling="no" allowfullscreen="true" webkitallowfullscreen="true" id="game_drop" allowtransparency="true"></iframe>
+            <iframe style="height:500px; width: 800px;" mozallowfullscreen="true" allow="autoplay; fullscreen; geolocation; microphone; camera; midi" frameborder="0" src="//v6p9d9t4.ssl.hwcdn.net/html/710674/gordomortero/index.html" msallowfullscreen="true" scrolling="no" allowfullscreen="true" webkitallowfullscreen="true" id="game_drop" allowtransparency="true"></iframe>-->
+            <iframe style="height:500px; width: 800px;" mozallowfullscreen="true" allow="autoplay; fullscreen; geolocation; microphone; camera; midi" frameborder="0" src="//v6p9d9t4.ssl.hwcdn.net/html/967327/Pity/index.html" msallowfullscreen="true" scrolling="no" allowfullscreen="true" webkitallowfullscreen="true" id="game_drop" allowtransparency="true"></iframe>
+          </div>
+          <!-- Fin contenido del modal -->
+        </div>
+        <!-- Fin modal para minijuegos -->
+
+        <!-- Pie de pagina, contiene informacion de los creadores y derechos a otras paginas -->
+        <footer>
+          <!-- Informacion del pie de pagina -->
+          <div class="footer-content">
+            <p>© 2019 FAI-GAME. Todos los derechos reservados.</p>
+            <p>Autores: Matias Oyarzun & Rodrigo Chavez</p>
+            <p>Todas las marcas registradas pertenecen a sus respectivos dueños.</p>
+            <p>Los minijuegos son propiedad de: <a href="https://kiz10.com/">kiz10.com</a></p>
+          </div>
+        </footer>
+        <!-- Fin pie de pagina -->
       </div>
+      <!-- Fin informacion de la pagina -->
     </div>
-
-    </div>
-    <script>
+    <!-- Fin contenedor de toda la pagina -->
+    <!--<script>
     var slideIndex = 1;
     showSlides(slideIndex);
     function plusSlides(n) {
@@ -111,8 +139,8 @@
       }
       slides[slideIndex-1].style.display = "block";
     }
-    </script>
-    <script>
+  </script>-->
+    <!--<script>
     // Get the modal
     var modal = document.getElementById("myModal");
 
@@ -138,6 +166,10 @@
         modal.style.display = "none";
       }
     }
-    </script>
+  </script>-->
   </body>
+  <!-- Fin body de la pagina -->
+
+  <!-- Link a scripts de javascript utilizados -->
+  <script type="text/javascript" src="scripts.js"></script>
 </html>
