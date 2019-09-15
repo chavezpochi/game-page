@@ -7,6 +7,21 @@
   text-decoration: none;
 }
 
+/* Encabezado invisible (Ya que nuestro encabezado es una imagen) */
+#encabezado{
+  display:none;
+}
+
+/* Texto de FB invisible (Ya que existian dos enlaces con el mismo texto pero diferentes destinos) */
+#textoFB{
+  display: none;
+}
+
+/* Texto de TW invisible (Ya que existian dos enlaces con el mismo texto pero diferentes destinos) */
+#textoTwitter{
+  display: none;
+}
+
 /* Propiedades definidas sobre el body de la pagina */
 body{
   background: linear-gradient(
@@ -60,7 +75,18 @@ body{
   font-family: 'Bowlby One SC', cursive;
   width: 100%;
   margin-left: 25%;
-  height: 100vh;
+  height: 100%;
+  background: linear-gradient(
+    rgba(130, 51, 122, 0.8),
+    rgba(91, 38, 85, 1)
+    );
+}
+
+/* Propiedades definidas sobre el contenido central de la pagina */
+#container .contenido-pag .imp-content{
+  width: 100%;
+  padding-top: 3%;
+  height: 100vh!important;
 }
 
 /* Propiedades definidas sobre los encabezados de las paginas */
@@ -74,9 +100,9 @@ body{
   background-color: rgb(88, 68, 144);
   border: 3px solid #ddd;
   border-radius: 10px;
-  margin: 4.5% 5% 4.5% 5%;
+  margin: 3%;
   padding: 1%;
-  height: 18%;
+  height: 25%;
 }
 
 /* Propiedades definidas sobre la imagen de las noticias */
@@ -95,10 +121,6 @@ body{
   float: left;
   width: 65%;
   font-family: 'Arial';
-}
-
-/* Propiedades definidas sobre el ancla del titulo de la noticia (NO PUDE CENTRAR EL TITULO DE LA NOTICIA :'V)*/
-#container .contenido-pag .news .text-new a{
 }
 
 /* Propiedades definidas sobre la informacion de la noticia */
@@ -127,12 +149,12 @@ body{
 }
 
 /* Propiedades definidas sobre el texto del fondo de la pagina */
-#container .contenido-pag .fondo .letra-pie{
+.letra-pie{
   color: #fff;
   padding: 3%;
   margin: 0% 4% 10% 4%;
   width: 90%;
-  background-color: rgba(103, 35, 120, 0.2);
+  background-color: rgba(103, 35, 120, 0.4);
   border-radius: 10px;
 }
 
@@ -141,7 +163,7 @@ body{
   padding: 1%;
   text-align: center;
   font-family: 'Telex', sans-serif;
-  width: 100%;
+  width: 100%!important;
   bottom: 0;
   background: rgba(0, 0, 0, 0.4);
 }
@@ -151,19 +173,14 @@ body{
   color: #ffffff;
 }
 
-/*
+/* Propiedades definidas sobre un ancla del bloque container de la pagina */
 #container a{
   color: rgb(255, 4, 185);
-}*/
+}
 
 /* Propiedades icono twitter */
 #container nav .redes .tw{
   color: #588CCA;
-}
-
-/* Propiedades icono instagram */
-#container nav .redes .ig{
-  color: #E61545;
 }
 
 /* Propiedades sobre el ancla de los iconos de las redes sociales */
@@ -220,88 +237,63 @@ background: linear-gradient(
   color: #c2bebe;
 }
 
+/* Media query que permite indicar el tamaño de la pantalla luego de ciertos pixeles */
 @media screen and (max-width:860px){
   #container nav{
 
   }
 }
 
-/* Prueba Carrusel rancio */
-
-#container .contenido-pag .slider{
-  padding-top: 9%;
-  width: 80%;
-  height: 100vh;
-  margin: auto;
-}
-
-#container .contenido-pag .slider ul{
-  padding: 0;
-  display: flex;
-  width: 300%;
-  animation: cambio 15s infinite alternate;
-}
-
-#container .contenido-pag  .minijuego{
-  border: solid;
-  width: 60%;
-  height: 15%;
-  margin-top: 5%;
-  margin-left: 20%;
-  margin-bottom: 20%;
-}
-
-
-#container .contenido-pag .slider ul li{
-  width: 100%;
-  background-size: cover;
-}
-
-#container .contenido-pag .slider ul li img{
+/* Propiedades definidas sobre las imagenes de los juegos */
+.game{
+  position: absolute;
+  z-index:1;
   width: 100%;
   height: 100%;
+  background-size: cover;
+  opacity: 0.7;
+  border-color:  rgb(255, 255, 255)!important;
+  border: solid;
+  border-radius: 10px;
+  }
+
+/* Propiedades definidas sobre el boton para jugar */
+.myBtn{
+  margin: auto;
+  z-index:2;
+  padding: 0.75em 1.5em;
+  border-radius: 5px;
+  color: white;
+  background: #b81471;
+  cursor: pointer;
+  text-align: center;
 }
 
-.game1{
-  position: inherit;
-  width: 90%;
+/* Propiedades definidas sobre el texto que hay sobre cada minijuego  */
+.game-text{
+  margin: 32% 10% 10% 10%!important;
+  position: absolute;
+  z-index:2;
+  color: #fff;
+  padding: 3%;
+  width: 80%;
+  background-color: rgba(103, 35, 120, 0.8);
+  border-radius: 10px;
+  text-align: center;
 }
 
-hr {
-  background-color:  #2D576C;
-  height: 7px;
-  width: 90%;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  border-width: 1px;
-}
-
-@keyframes cambio {
-  0%{margin-left: 0;}
-  30%{margin-left: 0;}
-
-  35%{margin-left: -100%;}
-  65%{margin-left: -100%;}
-
-  70%{margin-left: -200%;}
-  100%{margin-left: -200%;}
-}
-
-
-/* COPIA LIAM*/
+/* Propiedades definidas sobre el contenido del carrusel */
 .carousel-container {
   max-width: 100%;
+  height: 100%;
   position: relative;
+  justify-content: center;
 
 }
-.carousel-container .mySlides img{
-  max-height: 500px;
-}
-/* Next & previous buttons */
+
+/* Propiedades definidas sobre boton para avanzar o retroceder el carrusel */
 .prev, .next {
+  z-index: 2;
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -316,18 +308,18 @@ hr {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
+/* Posicion del boton next para la derecha */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* Propiedades cuando se posiciona mouse sobre boton para avanzar y retroceder carrusel */
 .prev:hover, .next:hover {
   background-color: purple;
 }
 
-/* Fading animation */
+/* Animacion de desvanecerse del carrusel */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -335,42 +327,53 @@ hr {
   animation-duration: 1.5s;
 }
 
+/* Propiedades definidas sobre la secuencia de animacion de cada slide de los minijuegos (Para distintos tipos de navegadores, etiqueta -webkit-) */
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
 }
 
+/* Propiedades definidas sobre la secuencia de animacion de cada slide de los minijuegos */
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
 }
 
-/*w3 modal*/
-/* The Modal (background) */
+/* Propiedades definidas sobre el modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none;
+  position: absolute;
+  z-index: 2; 
+  padding-top: 5%; 
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%; 
+  height: 100%;
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+  text-align: center!important;
+  justify-content: center!important;
 }
 
-/* Modal Content */
+/* Propiedades definidas sobre el contenido del modal */
 .modal-content {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 60%;
+  height: 60%;
+  text-align: center!important;
 }
 
-/* The Close Button */
+/* Propiedades definidas sobre los iframes de la pagina */
+iframe{
+  height:100%!important;
+  width: 90%!important;
+}
+
+/* Propiedades definidas sobre el boton close del modal */
 .close {
   color: #aaaaaa;
   float: right;
@@ -378,6 +381,7 @@ hr {
   font-weight: bold;
 }
 
+/* Efectos sobre el boton close del modal */
 .close:hover, .close:focus {
   color: #000;
   text-decoration: none;

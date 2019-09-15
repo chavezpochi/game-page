@@ -14,6 +14,7 @@
 
   <!-- Body de la pagina -->
   <body>
+    <a href="#contenidoPagina"></a>
     <!-- Contenedor de toda la pagina -->
     <div id="container">
       <!-- Menu de la pagina -->
@@ -27,16 +28,14 @@
           <li><a href="index.html"><i class="fas fa-dice-one"></i>Inicio</a></li>
           <li><a href="news.html"><i class="fas fa-dice-two"></i>Noticias</a></li>
           <li class="active"><a href="mini-games.html"><i class="fas fa-dice-three"></i>Minijuegos</a></li>
-          <li><a href="#a"><i class="fas fa-dice-four"></i>EASport</a></li>
-          <li><a href="#2"><i class="fas fa-dice-five"></i>Tecnologia</a></li>
+          <li><a href="esports.html"><i class="fas fa-dice-four"></i>ESports</a></li>
         </ul>
         <!-- Fin lista sin orden -->
 
         <!-- Div contenedor de las redes sociales -->
         <div class="redes">
-          <a href="https://www.facebook.com/FAI-Facultad-de-Informática-UNCo-185003921537235/?fref=ts" target="_blank" class="fb"><i class="fab fa-facebook "></i></a>
-          <a href="https://twitter.com/faiuncoma" target="_blank" class="tw"><i class="fab fa-twitter "></i></a>
-          <a href="#ig" target="_blank" class="ig"><i class="fab fa-instagram "></i></a>
+          <a href="https://www.facebook.com/FAI-Facultad-de-Informática-UNCo-185003921537235/?fref=ts" target="_blank" class="fb"><i class="fab fa-facebook "></i><p id="textoFB">Facebook</p></a>
+          <a href="https://twitter.com/faiuncoma" target="_blank" class="tw"><i class="fab fa-twitter "></i><p id="textoTW">Twitter</p></a>
         </div>
         <!-- Fin div contenedor de las redes sociales -->
       </nav>
@@ -44,67 +43,79 @@
 
       <!-- Informacion de la pagina (noticias y pie de pagina) -->
       <div class="contenido-pag">
+        <a name="contenidoPagina"></a>
         <!-- Encabezado seccion minijuegos -->
         <h1 class="sec-noticias" id="sec-miniJuegos">Minijuegos</h1>
-        <!-- Carrusel de imagenes de minijuegos -->
-        <div class="slider">
-          <!-- Contenedor de cada imagen del carrusel -->
-          <div class="carousel-container">
-            <!-- Ancla para salto de contenido (pagina examinator) -->
-            <a name="carousel"></a>
-            <!-- Primer slide del carrusel -->
-            <div class="mySlides fade">
-              <!-- Imagen y boton del minijuego para jugar -->
-              <img class="game1" src="img/gauchos.jpg" alt="Foto del primer minijuego">
-              <button id="myBtn">Jugar</button>
-            </div>
-            <!-- Fin primer slide del carrusel -->
+        <div class="imp-content">
+          <!-- Carrusel de imagenes de minijuegos -->
+          <div class="slider">
+            <!-- Contenedor de cada imagen del carrusel -->
+            <div class="carousel-container">
+              <!-- Ancla para salto de contenido (pagina examinator) -->
+              <a name="carousel"></a>
+              <!-- Primer slide del carrusel -->
+              <div class="mySlides fade">
+                <!-- Imagen y boton del minijuego para jugar -->
+                <img class="game" src="img/gauchos.jpg" alt="Game 1">
+                <div class="game-text">
+                  <p>Juego basado en conflicto de Gauchos De la Rural Y Veganos que protestaban por los derechos de los animales</p>
+                  <button class="myBtn" onclick="jugar('https://v6p9d9t4.ssl.hwcdn.net/html/1569072/Sunset%20Gauchers/index.html')">Abrir Juego</button>
+                </div>
+              </div>
+              <!-- Fin primer slide del carrusel -->
 
-            <!-- Segundo slide del carrusel -->
-            <div class="mySlides fade">
-              <!-- Imagen y boton del minijuego para jugar -->
-              <img src="img/fondo.jpg" alt="Foto del segundo minijuego">
-              <button id="myBtn">Jugar</button>
-            </div>
-            <!-- Fin segundo slide del carrusel -->
+              <!-- Segundo slide del carrusel -->
+              <div class="mySlides fade">
+                <!-- Imagen y boton del minijuego para jugar -->
+                <img class="game" src="img/gordo_mortero.jpg" alt="Game 3">
+                <div class="game-text">
+                  <p>Juego basado en el militante que utilizo un mortero casero en las manifestaciones contra la reforma previsional</p>
+                  <button class="myBtn" onclick="jugar('https://v6p9d9t4.ssl.hwcdn.net/html/710674/gordomortero/index.html')">Abrir Juego</button>
+                </div>
+              </div>
+              <!-- Fin segundo slide del carrusel -->
 
-            <!-- Tercer slide del carrusel -->
-            <div class="mySlides fade">
-              <!-- Imagen y boton del minijuego para jugar -->
-              <img src="img/fondo1.jpg" alt= "Foto del tercer minijuego">
-              <button id="myBtn">Jugar</button>
-            </div>
-            <!-- Fin tercer slide del carrusel -->
+              <!-- Tercer slide del carrusel -->
+              <div class="mySlides fade">
+                <!-- Imagen y boton del minijuego para jugar -->
+                <img class="game" src="img/wonder.jpg" alt="Game 3">
+                <div class="game-text">
+                  <p>Juego basado en el cantante "Pity" Alvares en su famosa bicicleta</p>
+                  <button class="myBtn" onclick="jugar('https://v6p9d9t4.ssl.hwcdn.net/html/967327/Pity/index.html')">Abrir Juego</button>
+                </div>
+              </div>
+              <!-- Fin tercer slide del carrusel -->
+              <!-- Cuarto slide del carrusel -->
+              <div class="mySlides fade">
+                <img class="game" src="img/chano.png" alt="Game 4">
+                <div class="game-text">
+                  <p>Juego basado en el cantante Chano Moreno Charpentier quien protagonizó un accidente de tránsito.</p>
+                  <button class="myBtn" onclick="jugar('https://v6p9d9t4.ssl.hwcdn.net/html/421376/Chanogeddon3/index.html')">Abrir Juego</button>
+                </div>
+              </div>
+              <!-- Fin cuato slide del carrusel -->
 
-            <!-- Cuarto slide del carrusel -->
-            <div class="mySlides fade">
-              <img src="img/fai.png" alt="Foto del cuarto minijuego">
-              <button id="myBtn">Jugar</button>
+              <!-- Boton anterior y siguiente del carrusel -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              <!-- Fin boton anterior y siguiente del carrusel -->
             </div>
-            <!-- Fin cuato slide del carrusel -->
-
-            <!-- Boton anterior y siguiente del carrusel -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            <!-- Fin boton anterior y siguiente del carrusel -->
+            <!-- Fin contenedor de cada imagen del carrusel -->
           </div>
-          <!-- Fin contenedor de cada imagen del carrusel -->
-        </div>
-        <!-- Fin carrusel de imagenes de minijuegos -->
-
-        <!-- Modal para minijuegos -->
-        <div id="myModal" class="modal">
-          <!-- Contenido del modal -->
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <!--<iframe style="height:500px; width: 800px;" mozallowfullscreen="true" allow="autoplay; fullscreen; geolocation; microphone; camera; midi" frameborder="0" src="//v6p9d9t4.ssl.hwcdn.net/html/1569072/Sunset Gauchers/index.html" msallowfullscreen="true" scrolling="no" allowfullscreen="true" webkitallowfullscreen="true" id="game_drop" allowtransparency="true"></iframe>
-            <iframe style="height:500px; width: 800px;" mozallowfullscreen="true" allow="autoplay; fullscreen; geolocation; microphone; camera; midi" frameborder="0" src="//v6p9d9t4.ssl.hwcdn.net/html/710674/gordomortero/index.html" msallowfullscreen="true" scrolling="no" allowfullscreen="true" webkitallowfullscreen="true" id="game_drop" allowtransparency="true"></iframe>-->
-            <iframe style="height:500px; width: 800px;" mozallowfullscreen="true" allow="autoplay; fullscreen; geolocation; microphone; camera; midi" frameborder="0" src="//v6p9d9t4.ssl.hwcdn.net/html/967327/Pity/index.html" msallowfullscreen="true" scrolling="no" allowfullscreen="true" webkitallowfullscreen="true" id="game_drop" allowtransparency="true"></iframe>
+          <!-- Fin carrusel de imagenes de minijuegos -->
+          <!-- Modal para minijuegos -->
+          <div id="myModal" class="modal">
+            <!-- Contenido del modal -->
+            <div id="modal-content" class="modal-content">
+              <span class="close">&times;</span>
+              <!--<iframe style="height:500px; width: 800px;" mozallowfullscreen="true" allow="autoplay; fullscreen; geolocation; microphone; camera; midi" frameborder="0" src="//v6p9d9t4.ssl.hwcdn.net/html/1569072/Sunset Gauchers/index.html" msallowfullscreen="true" scrolling="no" allowfullscreen="true" webkitallowfullscreen="true" id="game_drop" allowtransparency="true"></iframe>
+              <iframe mozallowfullscreen="true" allow="autoplay; fullscreen; geolocation; microphone; camera; midi" frameborder="0" src="//v6p9d9t4.ssl.hwcdn.net/html/710674/gordomortero/index.html" msallowfullscreen="true" scrolling="no" allowfullscreen="true" webkitallowfullscreen="true" id="game_drop" allowtransparency="true"></iframe>
+              -->
+            </div>
+            <!-- Fin contenido del modal -->
           </div>
-          <!-- Fin contenido del modal -->
+          <!-- Fin modal para minijuegos -->
         </div>
-        <!-- Fin modal para minijuegos -->
-
         <!-- Pie de pagina, contiene informacion de los creadores y derechos a otras paginas -->
         <footer>
           <!-- Informacion del pie de pagina -->
@@ -112,7 +123,7 @@
             <p>© 2019 FAI-GAME. Todos los derechos reservados.</p>
             <p>Autores: Matias Oyarzun & Rodrigo Chavez</p>
             <p>Todas las marcas registradas pertenecen a sus respectivos dueños.</p>
-            <p>Los minijuegos son propiedad de: <a href="https://kiz10.com/">kiz10.com</a></p>
+            <p>Los minijuegos son propiedad de: <a href="https://shittygames.itch.io">shittygames</a></p>
           </div>
         </footer>
         <!-- Fin pie de pagina -->
@@ -120,53 +131,6 @@
       <!-- Fin informacion de la pagina -->
     </div>
     <!-- Fin contenedor de toda la pagina -->
-    <!--<script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-      }
-      slides[slideIndex-1].style.display = "block";
-    }
-  </script>-->
-    <!--<script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
-
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks the button, open the modal
-    btn.onclick = function() {
-      modal.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-      modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-  </script>-->
   </body>
   <!-- Fin body de la pagina -->
 
