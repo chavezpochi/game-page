@@ -244,6 +244,17 @@ background: linear-gradient(
   }
 }
 
+/* Propiedades definidas sobre slider del carrusel */
+#container .contenido-pag .slider{
+  width: 80%;
+  height: 80%!important;
+  margin: auto;
+  background: linear-gradient(
+    rgba(130, 51, 122, 0.8),
+    rgba(91, 38, 85, 1)
+    );
+}
+
 /* Propiedades definidas sobre las imagenes de los juegos */
 .game{
   position: absolute;
@@ -255,7 +266,7 @@ background: linear-gradient(
   border-color:  rgb(255, 255, 255)!important;
   border: solid;
   border-radius: 10px;
-  }
+}
 
 /* Propiedades definidas sobre el boton para jugar */
 .myBtn{
